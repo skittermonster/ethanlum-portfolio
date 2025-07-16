@@ -47,7 +47,7 @@ const ComputerModel = ({ isMobile }) => {
           object={scene}
           scale={isMobile ? 0.08 : 0.16}
           position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-          rotation={[0, Math.PI, 0]} // Yaw 180 degrees (faces opposite)
+          rotation={[0, 0, 0]} // Yaw 180 degrees (faces opposite)
         />
       </Center>
     </group>
