@@ -20,7 +20,7 @@ const App = () => {
         <Tech />
         <Works />
         <div className="relative z-0">
-          <StarsCanvas />
+          <StarsCanvas className="absolute inset-0" />
           <Contact />
         </div>
       </div>
