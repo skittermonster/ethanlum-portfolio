@@ -11,7 +11,7 @@ import {
   Works,
 } from './components';
 
-// 1) Hook to drive our --vh CSS variable
+// 1) Hook to set --vh based on window.innerHeight
 function useFixMobileVh() {
   useEffect(() => {
     const setVh = () => {
@@ -21,13 +21,13 @@ function useFixMobileVh() {
       );
     };
     window.addEventListener('resize', setVh);
-    setVh(); // initial call on mount
+    setVh(); // set on mount
     return () => window.removeEventListener('resize', setVh);
   }, []);
 }
 
 const App = () => {
-  // 2) initialize the hook
+  // 2) call it here
   useFixMobileVh();
 
   return (
@@ -48,11 +48,8 @@ const App = () => {
         <Tech />
         <Works />
 
-        {/* 3) fallback + dynamic height, plus safe-area bottom padding */}
-        <div
-          className="relative z-0 h-[100vh] h-screen-dynamic"
-          style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
-        >
+        {/* 3) add h-screen-dynamic here */}
+        <div className="relative z-0 h-screen-dynamic">
           <StarsCanvas className="absolute inset-0" />
           <Contact />
         </div>
