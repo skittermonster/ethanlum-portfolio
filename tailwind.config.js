@@ -3,6 +3,9 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      height: {
+        // uses our --vh custom property instead of 1vh
+        'screen-dynamic': 'calc(var(--vh, 1vh) * 100)',
       colors: {
         primary: '#050816',
         secondary: '#aaa6c3',
@@ -20,6 +23,7 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': `url(/herobg.png)`,
       },
+    },
     },
   },
   plugins: [],
