@@ -29,7 +29,7 @@ const ComputerModel = ({ isMobile }) => {
       <Center>
       <primitive
         object={scene}
-        scale={isMobile ? 2.5 : 3} 
+        scale={isMobile ? 6 : 8}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
