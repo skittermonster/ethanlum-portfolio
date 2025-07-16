@@ -15,9 +15,14 @@ const ComputerModel = ({ isMobile }) => {
   );
 
   return (
-    <mesh>
-      <ambientLight intensity={3} />
+    <group>
+      {/* global fill light */}
+      <ambientLight intensity={0.3} />
+
+      {/* soft sky/down light */}
       <hemisphereLight intensity={0.15} groundColor="black" />
+
+      {/* main key light */}
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -26,17 +31,25 @@ const ComputerModel = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
+
+      {/* small point fill */}
       <pointLight intensity={1} />
-      <Center>
-      <primitive
-        object={scene}
-        scale={isMobile ? 0.1 : 0.2}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        //rotation={[-0.01, -0.2, 0]}
+
+      {/* back/rim light to illuminate rear faces */}
+      <directionalLight
+        position={[0, 10, -10]}
+        intensity={0.5}
+        castShadow={false}
       />
+
+      <Center>
+        <primitive
+          object={scene}
+          scale={isMobile ? 0.1 : 0.2}
+          position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        />
       </Center>
-      <pointLight intensity={1} />
-    </mesh>
+    </group>
   );
 };
 
