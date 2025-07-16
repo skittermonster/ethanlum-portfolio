@@ -35,6 +35,7 @@ const ComputerModel = ({ isMobile }) => {
         //rotation={[-0.01, -0.2, 0]}
       />
       </Center>
+      <pointLight intensity={1} />
     </mesh>
   );
 };
