@@ -51,29 +51,29 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
 };
 
 const Works = () => {
-  <section id="work" className="py-16 px-6 max-w-7xl mx-auto">
   return (
-    <>
+    <section id="work" className="py-16 px-6 max-w-7xl mx-auto">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
+
       <div className="w-full flex">
-        <motion.p variants={fadeIn("", "", 0.1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcase my skills and experience through examples
-          of my work. Each project is briefly described with links to code
-          repositories in it.
+        <motion.p
+          variants={fadeIn("", "", 0.1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          Following projects showcase my skills and experience…
         </motion.p>
       </div>
+
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} />
         ))}
       </div>
-    </>
-    
+    </section>
   );
-  </section>
 };
 
 export default SectionWrapper(Works, "Works");
