@@ -80,7 +80,6 @@ const Works = () => {
          <ProjectCard key={`project-${index}`} {...project} />
        ))}
      </div>
-      
     </section>
   );
 };
