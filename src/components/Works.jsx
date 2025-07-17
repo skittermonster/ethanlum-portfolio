@@ -76,4 +76,4 @@ const Works = () => {
   </section>
 };
 
-export default SectionWrapper(Works, "works");
+export default SectionWrapper(Works, "Works");
