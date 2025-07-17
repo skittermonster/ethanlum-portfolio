@@ -51,6 +51,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
 };
 
 const Works = () => {
+  <section id="work" className="py-16 px-6 max-w-7xl mx-auto">
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -70,7 +71,9 @@ const Works = () => {
         ))}
       </div>
     </>
+    
   );
+  </section>
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "works");
