@@ -35,6 +35,11 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+
+  {
+    id: "works",
+    title: "Projects",
+  },
 ];
 
 export const services = [
@@ -55,7 +60,7 @@ export const technologies = [
   { name: "git", icon: git },
 ];
 
-export const experiences = [
+export const experiences = [  
   {
     title: "AI/ML Intern",
     company_name: "EduSkill Foundation | AWS Academy | AICTE",
