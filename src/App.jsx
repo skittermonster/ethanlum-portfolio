@@ -12,7 +12,7 @@ import {
 } from './components';
 
 // 1) Hook to set --vh based on window.innerHeight
-function useFixMobileVh() 
+function useFixMobileVh() {
   useEffect(() => {
     const setVh = () => {
       document.documentElement.style.setProperty(
@@ -24,7 +24,7 @@ function useFixMobileVh()
     setVh(); // set on mount
     return () => window.removeEventListener('resize', setVh);
   }, []);
-
+}
 
 const App = () => {
   // 2) call it here
