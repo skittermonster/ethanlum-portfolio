@@ -67,11 +67,20 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} {...project} />
-        ))}
-      </div>
+      <div
+       className="
+         mt-20
+         grid grid-cols-1        /* 1 col by default (mobile) */
+         sm:grid-cols-2           /* ≥640px: 2 cols */
+         lg:grid-cols-3           /* ≥1024px: 3 cols */
+         gap-7
+       "
+     >
+       {projects.map((project, index) => (
+         <ProjectCard key={`project-${index}`} {...project} />
+       ))}
+     </div>
+      
     </section>
   );
 };
