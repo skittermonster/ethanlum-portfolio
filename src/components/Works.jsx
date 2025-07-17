@@ -58,29 +58,19 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Following projects showcase my skills and experience…
-        </motion.p>
-      </div>
+      <motion.p
+        variants={fadeIn("", "", 0.1)}
+        className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        Following projects showcase my skills and experience…
+      </motion.p>
 
-      <div
-       className="
-         mt-20
-         grid grid-cols-1        /* 1 col by default (mobile) */
-         sm:grid-cols-2           /* ≥640px: 2 cols */
-         lg:grid-cols-3           /* ≥1024px: 3 cols */
-         gap-7
-       "
-     >
-       {projects.map((project, index) => (
-         <ProjectCard key={`project-${index}`} {...project} />
-       ))}
-     </div>
-      
+      {/* force exactly 3 columns and up to 3 rows (static grid) */}
+      <div className="mt-20 grid grid-cols-3 grid-rows-3 gap-7">
+        {projects.slice(0, 9).map((project, index) => (
+          <ProjectCard key={`project-${index}`} {...project} />
+        ))}
+      </div>
     </section>
   );
 };
