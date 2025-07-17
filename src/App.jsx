@@ -44,10 +44,9 @@ const App = () => {
         </div>
 
         <About />
-        <Experience />
-        <Tech />
         <Works />
-
+        <Tech />
+        <Experience />
         {/* 3) add h-screen-dynamic here */}
         <div className="relative z-0 h-screen-dynamic">
           <StarsCanvas className="absolute inset-0" />
