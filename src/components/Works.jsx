@@ -86,4 +86,4 @@ const Works = () => {
 };
 
 // wrap with lowercase "works" so <a href="#works"> jumps here
-export default SectionWrapper(Works, "works");
+export default SectionWrapper(Works, "Works");
