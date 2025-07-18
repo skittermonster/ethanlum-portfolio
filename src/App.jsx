@@ -14,11 +14,14 @@ import {
 // Hook to set --vh based on the *usable* viewport height on mobile
 function useFixMobileVh() {
   useEffect(() => {
+    
+
     const setVh = () => {
-      document.documentElement.style.setProperty(
-        '--vh',
-        `${window.innerHeight * 0.01}px`
-      );
+      // prefer the visualViewport height when available,
+      // since window.innerHeight often doesn't change when browser chrome hides
+      const height = window.visualViewport?.height ?? window.innerHeight;
+      const vhUnit = height * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vhUnit}px`);
     };
 
     // run on mount
