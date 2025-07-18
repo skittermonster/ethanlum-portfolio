@@ -6,13 +6,14 @@ module.exports = {
       height: {
         // uses our --vh custom property instead of 1vh
         'screen-dynamic': 'calc(var(--vh, 1vh) * 100)',
-      colors: {
-        primary: '#050816',
+      },                           // ← Close height here
+      colors: {                    // ← Now at same level as height
+        primary:   '#050816',
         secondary: '#aaa6c3',
-        tertiary: '#151030',
-        'black-100': '#100d25',
-        'black-200': '#090325',
-        'white-100': '#f3f3f3',
+        tertiary:  '#151030',
+        'black-100':'#100d25',
+        'black-200':'#090325',
+        'white-100':'#f3f3f3',
       },
       boxShadow: {
         card: '0 35px 120px -15px #211e35',
@@ -23,7 +24,6 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': `url(/herobg.png)`,
       },
-    },
     },
   },
   plugins: [],
