@@ -11,7 +11,7 @@ import {
   Works,
 } from './components';
 
-// 1) Hook to set --vh based on window.innerHeight
+// Hook to set --vh based on the *usable* viewport height on mobile
 function useFixMobileVh() {
   useEffect(() => {
     const setVh = () => {
@@ -20,14 +20,29 @@ function useFixMobileVh() {
         `${window.innerHeight * 0.01}px`
       );
     };
+
+    // run on mount
+    setVh();
+
+    // 1) standard resize (pinch‑zoom, orientation‑change)
     window.addEventListener('resize', setVh);
-    setVh(); // set on mount
-    return () => window.removeEventListener('resize', setVh);
+
+    // 2) dynamic viewport changes (hide/show UI chrome on scroll)
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', setVh);
+    }
+
+    return () => {
+      window.removeEventListener('resize', setVh);
+      if (window.visualViewport) {
+        window.visualViewport.removeEventListener('resize', setVh);
+      }
+    };
   }, []);
 }
 
 const App = () => {
-  // 2) call it here
+  // keep --vh in sync with the visible viewport height
   useFixMobileVh();
 
   return (
@@ -38,6 +53,7 @@ const App = () => {
       }}
     >
       <div className="relative z-0 bg-primary">
+        {/* Hero section uses dynamic vh */}
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center h-screen-dynamic">
           <Navbar />
           <Hero />
@@ -47,7 +63,8 @@ const App = () => {
         <Works />
         <Tech />
         <Experience />
-        {/* 3) add h-screen-dynamic here */}
+
+        {/* Contact section also uses dynamic vh */}
         <div className="relative z-0 h-screen-dynamic">
           <StarsCanvas className="absolute inset-0" />
           <Contact />
