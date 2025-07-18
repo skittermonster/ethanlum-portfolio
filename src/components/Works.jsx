@@ -52,7 +52,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
 
 const Works = () => {
   return (
-    <section id="work" className="py-16 px-6 max-w-7xl mx-auto">
+    <section id="Works" className="py-16 px-6 max-w-7xl mx-auto">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
