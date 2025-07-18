@@ -22,6 +22,9 @@ function useFixMobileVh() {
       const height = window.visualViewport?.height ?? window.innerHeight;
       const vhUnit = height * 0.01;
       document.documentElement.style.setProperty('--vh', `${vhUnit}px`);
+
+      // force IntersectionObserver checks on load & resize
+      window.dispatchEvent(new Event('scroll'));
     };
 
     // run on mount
