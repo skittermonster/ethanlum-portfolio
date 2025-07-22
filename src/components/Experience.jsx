@@ -1,4 +1,4 @@
-// src/components/MusicDemo.jsx
+// src/components/Experience.jsx
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -10,21 +10,32 @@ import { tracks } from "../constants/music";
 const MusicCard = ({ track }) => (
   <div className="mb-8 flex justify-center">
     <div className="w-full max-w-md">
-      <iframe
-        width="100%"
-        height="300"            // match your embed’s height
-        scrolling="no"
-        frameBorder="no"
-        allow="autoplay"
-        src={
-          `https://w.soundcloud.com/player/` +
-          `?url=https%3A//api.soundcloud.com/tracks/${track.id}` +
-          `&color=${encodeURIComponent(track.color)}` +
-          `&auto_play=false&hide_related=false` +
-          `&show_comments=true&show_user=true` +
-          `&show_reposts=false&show_teaser=true&visual=true`
-        }
-      ></iframe>
+      {track.type === "spotify" ? (
+        <iframe
+          src={track.embedUrl}
+          width="100%"
+          height="380"          // adjust as needed for Spotify embed
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      ) : (
+        <iframe
+          width="100%"
+          height="300"          // match your existing SoundCloud embed height
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          src={
+            `https://w.soundcloud.com/player/` +
+            `?url=${encodeURIComponent(`https://api.soundcloud.com/tracks/${track.id}`)}` +
+            `&color=${encodeURIComponent(track.color)}` +
+            `&auto_play=false&hide_related=false` +
+            `&show_comments=true&show_user=true` +
+            `&show_reposts=false&show_teaser=true&visual=true`
+          }
+        ></iframe>
+      )}
       <h3 className="text-white text-xl font-bold mt-4 text-center">
         {track.title}
       </h3>
@@ -32,11 +43,11 @@ const MusicCard = ({ track }) => (
   </div>
 );
 
-const MusicDemo = () => (
+const Experience = () => (
   <>
     <motion.div variants={textVariant()}>
       <p className={`${styles.sectionSubText} text-center`}>
-        My Music Showcase
+        My Music & Podcasts
       </p>
       <h2 className={`${styles.sectionHeadText} text-center`}>
         Demo Tracks
@@ -51,4 +62,4 @@ const MusicDemo = () => (
   </>
 );
 
-export default SectionWrapper(MusicDemo, "music");
+export default SectionWrapper(Experience, "experience");
