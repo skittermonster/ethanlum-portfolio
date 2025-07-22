@@ -14,7 +14,7 @@ const MusicCard = ({ track }) => (
         <iframe
           src={track.embedUrl}
           width="100%"
-          height="380"          // adjust as needed for Spotify embed
+          height="352"          // adjust as needed for Spotify embed
           frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
