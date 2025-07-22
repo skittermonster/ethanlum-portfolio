@@ -7,11 +7,16 @@ export const tracks = [
     color: "#ff5500",
   },
   {
-    embedUrl: "https://open.spotify.com/embed/3K6l5Af7fjqvarMbyZtAqC?si=6a2b6d8b81d845a1",
+    embedUrl: "https://open.spotify.com/embed/track/3K6l5Af7fjqvarMbyZtAqC?utm_source=generator",
     type: "spotify",
     title: "Your Spotify Track Title",
   },
 ];
+
+
+
+
+
 
 
 
