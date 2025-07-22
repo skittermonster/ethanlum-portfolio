@@ -16,6 +16,7 @@ const MusicCard = ({ track }) => (
           width="100%"
           height="352"          // adjust as needed for Spotify embed
           frameBorder="0"
+          style={{ borderRadius: '12px' }}
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
