@@ -7,9 +7,9 @@ export const tracks = [
     color: "#ff5500",
   },
   {
-    embedUrl: "https://open.spotify.com/embed/track/3K6l5Af7fjqvarMbyZtAqC?utm_source=generator",
+    embedUrl: "https://open.spotify.com/embed/track/3K6l5Af7fjqvarMbyZtAqC?utm_source=generator&theme=0",
     type: "spotify",
-    title: "Your Spotify Track Title",
+    title: "Forgive Me",
   },
 ];
 
