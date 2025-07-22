@@ -48,7 +48,7 @@ const Experience = () => (
   <>
     <motion.div variants={textVariant()}>
       <p className={`${styles.sectionSubText} text-center`}>
-        My Music & Podcasts
+        Listen My Music!
       </p>
       <h2 className={`${styles.sectionHeadText} text-center`}>
         Demo Tracks
