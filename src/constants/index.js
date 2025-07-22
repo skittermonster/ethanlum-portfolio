@@ -44,9 +44,9 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
-  { title: "Python", icon: python },
+  { title: "FL Studio", icon: c },
+  { title: "Figma", icon: cpp },
+  { title: "React", icon: python },
   { title: "Java", icon: java },
 ];
 
