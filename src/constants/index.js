@@ -139,14 +139,14 @@ export const projects = [
       "https://github.com/skittermonster/InterferenceGame",
   },
   {
-    name: "PayloadMaster",
+    name: "Hidden Gems",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "A mobile application that helps users discover niche movies in their city, providing personalized recommendations based on user preferences and location.",
     tags: [
       { name: "shell", color: "blue-text-gradient" },
     ],
     image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
+    source_code_link: "https://github.com/skittermonster/iat359hiddengems",
   },
   {
     name: "CompileVortex",
