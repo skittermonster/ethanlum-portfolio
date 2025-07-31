@@ -103,7 +103,7 @@ export const projects = [
   {
     name: "LorAstley",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "LoRAst ley is a Lora for SDXL 1.0 t hat help generate 1024x1024 images of Rick Astley specifically from the Never Gonna G ive You Up video t hat can be run in ComfyUI.",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
       { name: "HTML", color: "green-text-gradient" },
@@ -114,7 +114,7 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "Sensor-Driven Interactive Dog Robot",
     description:
       "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
     tags: [
@@ -126,7 +126,7 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
   },
   {
-    name: "Mental Health Fitness Tracker",
+    name: "Unity 2D Stealth Platformer Game",
     description:
       "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
     tags: [
