@@ -103,7 +103,7 @@ export const projects = [
   {
     name: "LorAstley",
     description:
-      "LoRAstley is a LoRA for SDXL 1.0 t hat help generate 1024x1024 images of Rick Astley specifically from the Never Gonna G ive You Up video t hat can be run in ComfyUI.",
+      "LoRAstley is a LoRA for SDXL 1.0 that generates 1024x1024 images of Rick Astley specifically from the Never Gonna Give You Up video that can be run in ComfyUI.",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
       { name: "HTML", color: "green-text-gradient" },
