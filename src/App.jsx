@@ -67,7 +67,6 @@ const App = () => {
 
         <About />
         <Works />
-        <Tech />
         <Experience />
 
         {/* Contact section also uses dynamic vh */}
