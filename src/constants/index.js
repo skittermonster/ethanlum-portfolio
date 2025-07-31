@@ -101,7 +101,7 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "LorAstley",
     description:
       "Web-based platform that allows users to access weather information for their location by entering it in the search field",
     tags: [
