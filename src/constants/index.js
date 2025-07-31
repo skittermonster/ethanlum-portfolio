@@ -111,19 +111,19 @@ export const projects = [
       { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
     image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    source_code_link: "https://github.com/skittermonster/LoRAstley",
   },
   {
-    name: "Sensor-Driven Interactive Dog Robot",
+    name: "Pixel Doggo Sensor-Driven Interactive Dog Robot",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "A sensor-driven interactive dog robot that responds to user commands and environmental stimuli, showcasing robotics and AI integration.",
     tags: [
       { name: "HTML", color: "blue-text-gradient" },
       { name: "css", color: "green-text-gradient" },
       { name: "Javascript", color: "pink-text-gradient" },
     ],
     image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    source_code_link: "https://www.sfu.ca/siat/showcase/spring-2024-project-showcase/iat-267-pixeldoggo.html",
   },
   {
     name: "Interference - A Unity 2D Stealth Platformer Game",
