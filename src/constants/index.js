@@ -111,7 +111,7 @@ export const projects = [
       { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
     image: weatherpedia,
-    source_code_link: "https://github.com/skittermonster/LoRAstley",
+    source_code_link: "https://drive.google.com/file/d/1rrA42BxN8ST37wWfGWyCEqFKgU2H0Dc8/view?usp=sharing",
   },
   {
     name: "Pixel Doggo Sensor-Driven Interactive Dog Robot",
