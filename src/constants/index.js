@@ -103,7 +103,7 @@ export const projects = [
   {
     name: "LorAstley",
     description:
-      "LoRAst ley is a Lora for SDXL 1.0 t hat help generate 1024x1024 images of Rick Astley specifically from the Never Gonna G ive You Up video t hat can be run in ComfyUI.",
+      "LoRAstley is a LoRA for SDXL 1.0 t hat help generate 1024x1024 images of Rick Astley specifically from the Never Gonna G ive You Up video t hat can be run in ComfyUI.",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
       { name: "HTML", color: "green-text-gradient" },
@@ -126,9 +126,9 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
   },
   {
-    name: "Unity 2D Stealth Platformer Game",
+    name: "Interference - A Unity 2D Stealth Platformer Game",
     description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
+      "A 2D stealth platformer game where players navigate through levels, avoiding enemies and obstacles, using Unity's physics and animation systems.",
     tags: [
       { name: "Machine Learning", color: "blue-text-gradient" },
       { name: "Jupyter Notebook", color: "green-text-gradient" },
@@ -136,7 +136,7 @@ export const projects = [
     ],
     image: mhft,
     source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+      "https://github.com/skittermonster/InterferenceGame",
   },
   {
     name: "PayloadMaster",
