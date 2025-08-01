@@ -143,7 +143,8 @@ export const projects = [
     description:
       "A mobile application that helps users discover niche movies in their city, providing personalized recommendations based on user preferences and location.",
     tags: [
-      { name: "shell", color: "blue-text-gradient" },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Java Script", color: "blue-text-gradient" },
     ],
     image: payloadmaster,
     source_code_link: "https://github.com/skittermonster/iat359hiddengems",
