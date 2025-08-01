@@ -105,10 +105,10 @@ export const projects = [
     description:
       "LoRAstley is a LoRA for SDXL 1.0 that generates 1024x1024 images of Rick Astley specifically from the Never Gonna Give You Up video that can be run in ComfyUI.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
+      { name: "AI ", color: "blue-text-gradient" },
+      { name: "Machine Learning", color: "green-text-gradient" },
+      { name: "ComfyUI", color: "pink-text-gradient" },
+      { name: "LoRA", color: "yellow-text-gradient" },
     ],
     image: weatherpedia,
     source_code_link: "https://drive.google.com/file/d/1rrA42BxN8ST37wWfGWyCEqFKgU2H0Dc8/view?usp=sharing",
@@ -118,9 +118,9 @@ export const projects = [
     description:
       "A sensor-driven interactive dog robot that responds to user commands and environmental stimuli, showcasing robotics and AI integration.",
     tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "Java", color: "blue-text-gradient" },
+      { name: "Arduino", color: "green-text-gradient" },
+      { name: "Robotics", color: "pink-text-gradient" },
     ],
     image: termpw,
     source_code_link: "https://www.sfu.ca/siat/showcase/spring-2024-project-showcase/iat-267-pixeldoggo.html",
@@ -130,9 +130,9 @@ export const projects = [
     description:
       "A 2D stealth platformer game where players navigate through levels, avoiding enemies and obstacles, using Unity's physics and animation systems.",
     tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
+      { name: "C#", color: "blue-text-gradient" },
+      { name: "Unity", color: "green-text-gradient" },
+      { name: "Game Development", color: "pink-text-gradient" },
     ],
     image: mhft,
     source_code_link:
@@ -162,7 +162,7 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
   {
-    name: "Sketcher",
+    name: "Short Film",
     description:
       "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
     tags: [
