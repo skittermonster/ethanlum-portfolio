@@ -164,14 +164,14 @@ export const projects = [
   {
     name: "Short Film",
     description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
+      "A short film crime drama and comedy that explores the themes of revenge and justice, showcasing the journey of a protagonist",
     tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
+      { name: "Video Editing", color: "blue-text-gradient" },
+      { name: "Sound Mixing", color: "green-text-gradient" },
+      { name: "Sound Recording", color: "pink-text-gradient" },
     ],
 
     image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    source_code_link: "https://youtu.be/Ca0wcVypnqY?si=DoAwfyRxj8RKss2l",
   },
 ];
