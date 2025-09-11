@@ -162,7 +162,7 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
   {
-    name: "Short Film",
+    name: "Short Filmmmmmmmmm",
     description:
       "A short film crime drama and comedy that explores the themes of revenge and justice, showcasing the journey of a protagonist",
     tags: [
@@ -171,7 +171,7 @@ export const projects = [
       { name: "Sound Recording", color: "pink-text-gradient" },
     ],
 
-    image: sketcher,
+    image: skibidi,
     source_code_link: "https://youtu.be/Ca0wcVypnqY?si=DoAwfyRxj8RKss2l",
   },
 ];
