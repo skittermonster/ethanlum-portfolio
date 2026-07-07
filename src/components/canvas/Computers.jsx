@@ -1,18 +1,11 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, Center } from "@react-three/drei";
-import { DRACOLoader } from "three/addons/loaders/DRACOLoader";
+
 import CanvasLoader from "../Loader";
 
 const ComputerModel = ({ isMobile }) => {
-  const { scene } = useGLTF(
-    "./desktop_pc/scene.gltf",
-    undefined,
-    (loader) => {
-      const dracoLoader = new DRACOLoader();
-      loader.setDRACOLoader(dracoLoader);
-    }
-  );
+  const { scene } = useGLTF("/desktop_pc/scene.glb");
 
   return (
     <group>
@@ -95,3 +88,5 @@ const ComputersCanvas = () => {
 };
 
 export default ComputersCanvas;
+
+useGLTF.preload("/desktop_pc/scene.glb");
